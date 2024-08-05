@@ -115,10 +115,9 @@
 
     <ul>
         <li><b>Input speech</b>: The original audio</li>
-        <li><b>Our proposed</b>: Accent conversion using discrete units with parallel data synthesized from controllable
-            accented TTS
+        <li><b>Accent Neutralized</b>: Accent neutralized with AC model
         </li>
-        <li><b>Baseline</b>: The Baseline of Distanglement Network</li>
+        <li><b>Pronunciaiton Correction</b>: Pronunciation correction with transcript</li>
 
     </ul>
 
@@ -134,10 +133,10 @@
 
         <tr>
             <td>
-                <b>Proposed</b>
+                <b>Neutralized</b>
             </td>
             <td>
-                <b>Baseline</b>
+                <b>Pronunciation Correction</b>
             </td>
 
         </tr>
@@ -148,215 +147,18 @@
 
             <td>
                 <audio controls="">
-                    <source src="wav/input/input_0.wav" type="audio/wav"></source>
+                    <source src="wav/org/1.wav" type="audio/wav"></source>
                 </audio>
             </td>
             <td>
                 <audio controls="">
-                    <source src="wav/my_output/input_0.wav" type="audio/wav"></source>
-                </audio>
-            </td>
-
-            <td>
-                <audio controls="">
-                    <source src="wav/baseline/input_0.wav" type="audio/wav"></source>
-                </audio>
-            </td>
-
-
-        </tr>
-        <tr>
-            <!--        <td rowspan="3">TXHC</td>-->
-
-            <td>
-                <audio controls="">
-                    <source src="wav/input/input_1.wav" type="audio/wav"></source>
-                </audio>
-            </td>
-            <td>
-                <audio controls="">
-                    <source src="wav/my_output/input_1.wav" type="audio/wav"></source>
+                    <source src="wav/neutralize/1.wav" type="audio/wav"></source>
                 </audio>
             </td>
 
             <td>
                 <audio controls="">
-                    <source src="wav/baseline/input_1.wav" type="audio/wav"></source>
-                </audio>
-            </td>
-
-
-        </tr>
-        <tr>
-            <!--        <td rowspan="3">TXHC</td>-->
-
-            <td>
-                <audio controls="">
-                    <source src="wav/input/input_2.wav" type="audio/wav"></source>
-                </audio>
-            </td>
-            <td>
-                <audio controls="">
-                    <source src="wav/my_output/input_2.wav" type="audio/wav"></source>
-                </audio>
-            </td>
-
-            <td>
-                <audio controls="">
-                    <source src="wav/baseline/input_2.wav" type="audio/wav"></source>
-                </audio>
-            </td>
-
-
-        </tr>
-        <tr>
-            <!--        <td rowspan="3">TXHC</td>-->
-
-            <td>
-                <audio controls="">
-                    <source src="wav/input/input_3.wav" type="audio/wav"></source>
-                </audio>
-            </td>
-            <td>
-                <audio controls="">
-                    <source src="wav/my_output/input_3.wav" type="audio/wav"></source>
-                </audio>
-            </td>
-
-            <td>
-                <audio controls="">
-                    <source src="wav/baseline/input_3.wav" type="audio/wav"></source>
-                </audio>
-            </td>
-
-
-        </tr>
-        <tr>
-            <!--        <td rowspan="3">TXHC</td>-->
-
-            <td>
-                <audio controls="">
-                    <source src="wav/input/THV_arctic_a0002.wav" type="audio/wav"></source>
-                </audio>
-            </td>
-            <td>
-                <audio controls="">
-                    <source src="wav/my_output/THV_arctic_a0002.wav" type="audio/wav"></source>
-                </audio>
-            </td>
-
-            <td>
-                <audio controls="">
-                    <source src="wav/baseline/THV_arctic_a0002.wav" type="audio/wav"></source>
-                </audio>
-
-            </td>
-
-        </tr>
-        <tr>
-            <!--        <td rowspan="3">TXHC</td>-->
-
-            <td>
-                <audio controls="">
-                    <source src="wav/input/THV_arctic_a0003.wav" type="audio/wav"></source>
-                </audio>
-            </td>
-            <td>
-                <audio controls="">
-                    <source src="wav/my_output/THV_arctic_a0003.wav" type="audio/wav"></source>
-                </audio>
-            </td>
-
-            <td>
-                <audio controls="">
-                    <source src="wav/baseline/THV_arctic_a0003.wav" type="audio/wav"></source>
-                </audio>
-
-            </td>
-
-        </tr>
-        <tr>
-            <!--        <td rowspan="3">TXHC</td>-->
-
-            <td>
-                <audio controls="">
-                    <source src="wav/input/HKK_arctic_a0001.wav" type="audio/wav"></source>
-                </audio>
-            </td>
-            <td>
-                <audio controls="">
-                    <source src="wav/my_output/HKK_a0001.wav" type="audio/wav"></source>
-                </audio>
-            </td>
-
-            <td>
-                <audio controls="">
-                    <source src="wav/baseline/HKK_arctic_a0001.wav" type="audio/wav"></source>
-                </audio>
-
-            </td>
-
-        </tr>
-        <tr>
-            <!--        <td rowspan="3">TXHC</td>-->
-
-            <td>
-                <audio controls="">
-                    <source src="wav/input/HKK_arctic_a0002.wav" type="audio/wav"></source>
-                </audio>
-            </td>
-            <td>
-                <audio controls="">
-                    <source src="wav/my_output/HKK_a0002.wav" type="audio/wav"></source>
-                </audio>
-            </td>
-
-            <td>
-                <audio controls="">
-                    <source src="wav/baseline/HKK_arctic_a0002.wav" type="audio/wav"></source>
-                </audio>
-
-            </td>
-
-        </tr>
-         </tr>
-                <tr>
-            <!--        <td rowspan="3">TXHC</td>-->
-
-            <td>
-                <audio controls="">
-                    <source src="wav/input/txhc_1083.wav" type="audio/wav"></source>
-                </audio>
-            </td>
-            <td>
-                <audio controls="">
-                    <source src="wav/my_output/txhc_1083.wav" type="audio/wav"></source>
-                </audio>
-            </td>
-            <td>
-                <audio controls="">
-                    <source src="wav/baseline/txhc_1083.wav" type="audio/wav"></source>
-                </audio>
-            </td>
-
-
-        </tr>
-        <tr>
-            <!--        <td rowspan="3">TXHC</td>-->
-
-            <td>
-                <audio controls="">
-                    <source src="wav/input/ykwk_1108.wav" type="audio/wav"></source>
-                </audio>
-            </td>
-            <td>
-                <audio controls="">
-                    <source src="wav/my_output/ykwk_1108.wav" type="audio/wav"></source>
-                </audio>
-            </td>
-            <td>
-                <audio controls="">
-                    <source src="wav/baseline/ykwk_1108.wav" type="audio/wav"></source>
+                    <source src="wav/pronunciation_correct/1.wav" type="audio/wav"></source>
                 </audio>
             </td>
 
@@ -368,17 +170,317 @@
 
             <td>
                 <audio controls="">
-                    <source src="wav/input/ykwk_1116.wav" type="audio/wav"></source>
+                    <source src="wav/org/2.wav" type="audio/wav"></source>
                 </audio>
             </td>
             <td>
                 <audio controls="">
-                    <source src="wav/my_output/ykwk_1116.wav" type="audio/wav"></source>
+                    <source src="wav/neutralize/2.wav" type="audio/wav"></source>
+                </audio>
+            </td>
+
+            <td>
+                <audio controls="">
+                    <source src="wav/pronunciation_correct/2.wav" type="audio/wav"></source>
+                </audio>
+            </td>
+
+
+        </tr>
+        <tr>
+            <!--        <td rowspan="3">TXHC</td>-->
+
+            <td>
+                <audio controls="">
+                    <source src="wav/org/3.wav" type="audio/wav"></source>
                 </audio>
             </td>
             <td>
                 <audio controls="">
-                    <source src="wav/baseline/ykwk_1116.wav" type="audio/wav"></source>
+                    <source src="wav/neutralize/3.wav" type="audio/wav"></source>
+                </audio>
+            </td>
+
+            <td>
+                <audio controls="">
+                    <source src="wav/pronunciation_correct/3.wav" type="audio/wav"></source>
+                </audio>
+            </td>
+
+
+        </tr>
+
+        <tr>
+            <!--        <td rowspan="3">TXHC</td>-->
+
+            <td>
+                <audio controls="">
+                    <source src="wav/org/4.wav" type="audio/wav"></source>
+                </audio>
+            </td>
+            <td>
+                <audio controls="">
+                    <source src="wav/neutralize/4.wav" type="audio/wav"></source>
+                </audio>
+            </td>
+
+            <td>
+                <audio controls="">
+                    <source src="wav/pronunciation_correct/4.wav" type="audio/wav"></source>
+                </audio>
+            </td>
+
+
+        </tr>
+
+        <tr>
+            <!--        <td rowspan="3">TXHC</td>-->
+
+            <td>
+                <audio controls="">
+                    <source src="wav/org/5.wav" type="audio/wav"></source>
+                </audio>
+            </td>
+            <td>
+                <audio controls="">
+                    <source src="wav/neutralize/5.wav" type="audio/wav"></source>
+                </audio>
+            </td>
+
+            <td>
+                <audio controls="">
+                    <source src="wav/pronunciation_correct/5.wav" type="audio/wav"></source>
+                </audio>
+            </td>
+
+
+        </tr>
+
+        <tr>
+            <!--        <td rowspan="3">TXHC</td>-->
+
+            <td>
+                <audio controls="">
+                    <source src="wav/org/6.wav" type="audio/wav"></source>
+                </audio>
+            </td>
+            <td>
+                <audio controls="">
+                    <source src="wav/neutralize/6.wav" type="audio/wav"></source>
+                </audio>
+            </td>
+
+            <td>
+                <audio controls="">
+                    <source src="wav/pronunciation_correct/6.wav" type="audio/wav"></source>
+                </audio>
+            </td>
+
+
+        </tr>
+
+        <tr>
+            <!--        <td rowspan="3">TXHC</td>-->
+
+            <td>
+                <audio controls="">
+                    <source src="wav/org/7.wav" type="audio/wav"></source>
+                </audio>
+            </td>
+            <td>
+                <audio controls="">
+                    <source src="wav/neutralize/7.wav" type="audio/wav"></source>
+                </audio>
+            </td>
+
+            <td>
+                <audio controls="">
+                    <source src="wav/pronunciation_correct/7.wav" type="audio/wav"></source>
+                </audio>
+            </td>
+
+
+        </tr>
+
+        <tr>
+            <!--        <td rowspan="3">TXHC</td>-->
+
+            <td>
+                <audio controls="">
+                    <source src="wav/org/8.wav" type="audio/wav"></source>
+                </audio>
+            </td>
+            <td>
+                <audio controls="">
+                    <source src="wav/neutralize/8.wav" type="audio/wav"></source>
+                </audio>
+            </td>
+
+            <td>
+                <audio controls="">
+                    <source src="wav/pronunciation_correct/8.wav" type="audio/wav"></source>
+                </audio>
+            </td>
+
+
+        </tr>
+
+        <tr>
+            <!--        <td rowspan="3">TXHC</td>-->
+
+            <td>
+                <audio controls="">
+                    <source src="wav/org/9.wav" type="audio/wav"></source>
+                </audio>
+            </td>
+            <td>
+                <audio controls="">
+                    <source src="wav/neutralize/9.wav" type="audio/wav"></source>
+                </audio>
+            </td>
+
+            <td>
+                <audio controls="">
+                    <source src="wav/pronunciation_correct/9.wav" type="audio/wav"></source>
+                </audio>
+            </td>
+
+
+        </tr>
+
+        <tr>
+            <!--        <td rowspan="3">TXHC</td>-->
+
+            <td>
+                <audio controls="">
+                    <source src="wav/org/10.wav" type="audio/wav"></source>
+                </audio>
+            </td>
+            <td>
+                <audio controls="">
+                    <source src="wav/neutralize/10.wav" type="audio/wav"></source>
+                </audio>
+            </td>
+
+            <td>
+                <audio controls="">
+                    <source src="wav/pronunciation_correct/10.wav" type="audio/wav"></source>
+                </audio>
+            </td>
+
+
+        </tr>
+
+        <tr>
+            <!--        <td rowspan="3">TXHC</td>-->
+
+            <td>
+                <audio controls="">
+                    <source src="wav/org/11.wav" type="audio/wav"></source>
+                </audio>
+            </td>
+            <td>
+                <audio controls="">
+                    <source src="wav/neutralize/11.wav" type="audio/wav"></source>
+                </audio>
+            </td>
+
+            <td>
+                <audio controls="">
+                    <source src="wav/pronunciation_correct/11.wav" type="audio/wav"></source>
+                </audio>
+            </td>
+
+
+        </tr>
+
+        <tr>
+            <!--        <td rowspan="3">TXHC</td>-->
+
+            <td>
+                <audio controls="">
+                    <source src="wav/org/12.wav" type="audio/wav"></source>
+                </audio>
+            </td>
+            <td>
+                <audio controls="">
+                    <source src="wav/neutralize/12.wav" type="audio/wav"></source>
+                </audio>
+            </td>
+
+            <td>
+                <audio controls="">
+                    <source src="wav/pronunciation_correct/12.wav" type="audio/wav"></source>
+                </audio>
+            </td>
+
+
+        </tr>
+
+        <tr>
+            <!--        <td rowspan="3">TXHC</td>-->
+
+            <td>
+                <audio controls="">
+                    <source src="wav/org/13.wav" type="audio/wav"></source>
+                </audio>
+            </td>
+            <td>
+                <audio controls="">
+                    <source src="wav/neutralize/13.wav" type="audio/wav"></source>
+                </audio>
+            </td>
+
+            <td>
+                <audio controls="">
+                    <source src="wav/pronunciation_correct/13.wav" type="audio/wav"></source>
+                </audio>
+            </td>
+
+
+        </tr>
+
+
+        <tr>
+            <!--        <td rowspan="3">TXHC</td>-->
+
+            <td>
+                <audio controls="">
+                    <source src="wav/org/14.wav" type="audio/wav"></source>
+                </audio>
+            </td>
+            <td>
+                <audio controls="">
+                    <source src="wav/neutralize/14.wav" type="audio/wav"></source>
+                </audio>
+            </td>
+
+            <td>
+                <audio controls="">
+                    <source src="wav/pronunciation_correct/14.wav" type="audio/wav"></source>
+                </audio>
+            </td>
+
+
+        </tr>
+
+        <tr>
+            <!--        <td rowspan="3">TXHC</td>-->
+
+            <td>
+                <audio controls="">
+                    <source src="wav/org/15.wav" type="audio/wav"></source>
+                </audio>
+            </td>
+            <td>
+                <audio controls="">
+                    <source src="wav/neutralize/15.wav" type="audio/wav"></source>
+                </audio>
+            </td>
+
+            <td>
+                <audio controls="">
+                    <source src="wav/pronunciation_correct/15.wav" type="audio/wav"></source>
                 </audio>
             </td>
 
