@@ -89,7 +89,7 @@
     <tbody>
     <tr>
         <td>
-            <h1>Accent conversion demo audios</h1>
+            <h1>Improving Pronunciation and Accent Conversion through Knowledge Distillation And Synthetic Ground-Truth from Native TTS</h1>
         </td>
     </tbody>
 </table>
@@ -97,142 +97,296 @@
 
 
     <ul>
-        <li><b>Input speech</b>: The original audio</li>
-        <li><b>Accent Neutralized</b>: Accent neutralized with AC model
+        <li><b>Input accented speech</b>: The original audio</li>
+        <li><b>Accent Conversion and Improving Pronunciation</b>:  The converted audio in all experiments
         </li>
-        <li><b>Pronunciaiton Correction</b>: Pronunciation correction with transcript</li>
+
 
     </ul>
+        </table>>
+        <table width="100%" class="samples">
+        <tbody>
+        <tr>
 
+
+            <td rowspan="2"><b>Input with Arabic accent</b></td>
+
+            <td colspan="8"><b>Accent conversion and Improving Pronunciation </b></td>
+        </tr>
+
+        <tr>
+            <td>
+                <b>Baseline</b>
+            </td>
+            <td>
+                <b>Fine-tuning with KL loss</b>
+            </td>
+            <td>
+                <b>Fine-tuning with KL loss and Synthetic Ground-Truth</b>
+            </td>
+             <td>
+                <b>Synthetic Ground-Truth</b>
+            </td>
+
+        </tr>
+       <tr>
+            <!--        <td rowspan="3">TXHC</td>-->
+
+            <td>
+                <audio controls="">
+                    <source src="wav_clean/input/arabic/arctic_a0087.wav" type="audio/wav"></source>
+                </audio>
+            </td>
+            <td>
+                <audio controls="">
+                    <source src="wav/baseline/arabic/a0087.wav" type="audio/wav"></source>
+                </audio>
+            </td>
+
+           <td>
+                <audio controls="">
+                    <source src="wav_clean/without_synthetic/arabic/a0087.wav" type="audio/wav"></source>
+                </audio>
+            </td>
+
+            <td>
+                <audio controls="">
+                    <source src="wav_clean/proposed/arabic/a0087.wav" type="audio/wav"></source>
+                </audio>
+            </td>
+            <td>
+                <audio controls="">
+                    <source src="wav_clean/ground_truth/arabic/a0087.wav" type="audio/wav"></source>
+                </audio>
+            </td>
+
+
+        </tr>
+
+        <tr>
+            <!--        <td rowspan="3">TXHC</td>-->
+
+            <td>
+                <audio controls="">
+                    <source src="wav_clean/input/arabic/arctic_b0044.wav" type="audio/wav"></source>
+                </audio>
+            </td>
+            <td>
+                <audio controls="">
+                    <source src="wav/baseline/arabic/b0044.wav" type="audio/wav"></source>
+                </audio>
+            </td>
+
+           <td>
+                <audio controls="">
+                    <source src="wav_clean/without_synthetic/arabic/b0044.wav" type="audio/wav"></source>
+                </audio>
+            </td>
+
+            <td>
+                <audio controls="">
+                    <source src="wav_clean/proposed/arabic/b0044.wav" type="audio/wav"></source>
+                </audio>
+            </td>
+            <td>
+                <audio controls="">
+                    <source src="wav_clean/ground_truth/arabic/b0044.wav" type="audio/wav"></source>
+                </audio>
+            </td>
+
+
+        </tr>
+
+        <tr>
+            <!--        <td rowspan="3">TXHC</td>-->
+
+            <td>
+                <audio controls="">
+                    <source src="wav_clean/input/arabic/arctic_b0280.wav" type="audio/wav"></source>
+                </audio>
+            </td>
+            <td>
+                <audio controls="">
+                    <source src="wav/baseline/arabic/b0280.wav" type="audio/wav"></source>
+                </audio>
+            </td>
+
+           <td>
+                <audio controls="">
+                    <source src="wav_clean/without_synthetic/arabic/b280.wav" type="audio/wav"></source>
+                </audio>
+            </td>
+
+            <td>
+                <audio controls="">
+                    <source src="wav_clean/proposed/arabic/b0280.wav" type="audio/wav"></source>
+                </audio>
+            </td>
+            <td>
+                <audio controls="">
+                    <source src="wav_clean/ground_truth/arabic/b0280.wav" type="audio/wav"></source>
+                </audio>
+            </td>
+
+
+        </tr>
+        <tr>
+            <!--        <td rowspan="3">TXHC</td>-->
+
+            <td>
+                <audio controls="">
+                    <source src="wav_clean/input/arabic/arctic_b0534.wav" type="audio/wav"></source>
+                </audio>
+            </td>
+            <td>
+                <audio controls="">
+                    <source src="wav/baseline/arabic/b0534.wav" type="audio/wav"></source>
+                </audio>
+            </td>
+
+           <td>
+                <audio controls="">
+                    <source src="wav_clean/without_synthetic/arabic/b0534.wav" type="audio/wav"></source>
+                </audio>
+            </td>
+
+            <td>
+                <audio controls="">
+                    <source src="wav_clean/proposed/arabic/b0534.wav" type="audio/wav"></source>
+                </audio>
+            </td>
+            <td>
+                <audio controls="">
+                    <source src="wav_clean/ground_truth/arabic/b0534.wav" type="audio/wav"></source>
+                </audio>
+            </td>
+
+
+        </tr>
+        </tbody>
+    </table>>
     <table width="100%" class="samples">
         <tbody>
         <tr>
 
 
-            <td rowspan="2"><b>Input</b></td>
+            <td rowspan="2"><b>Input with Vietnamese accent</b></td>
 
-            <td colspan="4"><b>Accent conversion</b></td>
+            <td colspan="8"><b>Accent conversion and  Improving Pronunciation</b></td>
         </tr>
 
         <tr>
             <td>
-                <b>Neutralized</b>
+                <b>Baseline</b>
             </td>
             <td>
-                <b>Pronunciation Correction</b>
+                <b>Fine-tuning with KL loss</b>
+            </td>
+            <td>
+                <b>Fine-tuning with KL loss and Synthetic Ground-Truth</b>
+            </td>
+             <td>
+                <b>Synthetic Ground-Truth</b>
             </td>
 
         </tr>
-
-
-        <tr>
+         <tr>
             <!--        <td rowspan="3">TXHC</td>-->
 
             <td>
                 <audio controls="">
-                    <source src="wav/org/1.wav" type="audio/wav"></source>
+                    <source src="wav_clean/input/vietnamese/arctic_a0023.wav" type="audio/wav"></source>
                 </audio>
             </td>
             <td>
                 <audio controls="">
-                    <source src="wav/neutralize/1.wav" type="audio/wav"></source>
+                    <source src="wav/baseline/vietnamese/a0023.wav" type="audio/wav"></source>
                 </audio>
             </td>
 
-            <td>
+           <td>
                 <audio controls="">
-                    <source src="wav/pronunciation_correct/1.wav" type="audio/wav"></source>
-                </audio>
-            </td>
-
-
-        </tr>
-
-        <tr>
-            <!--        <td rowspan="3">TXHC</td>-->
-
-            <td>
-                <audio controls="">
-                    <source src="wav/org/2.wav" type="audio/wav"></source>
-                </audio>
-            </td>
-            <td>
-                <audio controls="">
-                    <source src="wav/neutralize/2.wav" type="audio/wav"></source>
+                    <source src="wav_clean/without_synthetic/vietnamese/a0023.wav" type="audio/wav"></source>
                 </audio>
             </td>
 
             <td>
                 <audio controls="">
-                    <source src="wav/pronunciation_correct/2.wav" type="audio/wav"></source>
-                </audio>
-            </td>
-
-
-        </tr>
-        <tr>
-            <!--        <td rowspan="3">TXHC</td>-->
-
-            <td>
-                <audio controls="">
-                    <source src="wav/org/3.wav" type="audio/wav"></source>
+                    <source src="wav_clean/proposed/vietnamese/a0023.wav" type="audio/wav"></source>
                 </audio>
             </td>
             <td>
                 <audio controls="">
-                    <source src="wav/neutralize/3.wav" type="audio/wav"></source>
-                </audio>
-            </td>
-
-            <td>
-                <audio controls="">
-                    <source src="wav/pronunciation_correct/3.wav" type="audio/wav"></source>
+                    <source src="wav_clean/ground_truth/vietnamese/a0023.wav" type="audio/wav"></source>
                 </audio>
             </td>
 
 
         </tr>
 
-        <tr>
+         <tr>
             <!--        <td rowspan="3">TXHC</td>-->
 
             <td>
                 <audio controls="">
-                    <source src="wav/org/4.wav" type="audio/wav"></source>
+                    <source src="wav_clean/input/vietnamese/arctic_a0073.wav" type="audio/wav"></source>
                 </audio>
             </td>
             <td>
                 <audio controls="">
-                    <source src="wav/neutralize/4.wav" type="audio/wav"></source>
+                    <source src="wav/baseline/vietnamese/a0073.wav" type="audio/wav"></source>
+                </audio>
+            </td>
+
+           <td>
+                <audio controls="">
+                    <source src="wav_clean/without_synthetic/vietnamese/a0073.wav" type="audio/wav"></source>
                 </audio>
             </td>
 
             <td>
                 <audio controls="">
-                    <source src="wav/pronunciation_correct/4.wav" type="audio/wav"></source>
+                    <source src="wav_clean/proposed/vietnamese/a0073.wav" type="audio/wav"></source>
+                </audio>
+            </td>
+            <td>
+                <audio controls="">
+                    <source src="wav_clean/ground_truth/vietnamese/a0073.wav" type="audio/wav"></source>
                 </audio>
             </td>
 
 
         </tr>
 
-        <tr>
+         <tr>
             <!--        <td rowspan="3">TXHC</td>-->
 
             <td>
+
                 <audio controls="">
-                    <source src="wav/org/5.wav" type="audio/wav"></source>
+                    <source src="wav_clean/input/vietnamese/arctic_b0358.wav" type="audio/wav"></source>
                 </audio>
             </td>
             <td>
                 <audio controls="">
-                    <source src="wav/neutralize/5.wav" type="audio/wav"></source>
+                    <source src="wav/baseline/vietnamese/b0358.wav" type="audio/wav"></source>
+                </audio>
+            </td>
+
+           <td>
+                <audio controls="">
+                    <source src="wav_clean/without_synthetic/vietnamese/b0358.wav" type="audio/wav"></source>
                 </audio>
             </td>
 
             <td>
                 <audio controls="">
-                    <source src="wav/pronunciation_correct/5.wav" type="audio/wav"></source>
+                    <source src="wav_clean/proposed/vietnamese/b0358.wav" type="audio/wav"></source>
+                </audio>
+            </td>
+            <td>
+                <audio controls="">
+                    <source src="wav_clean/ground_truth/vietnamese/b0358.wav" type="audio/wav"></source>
                 </audio>
             </td>
 
@@ -244,18 +398,92 @@
 
             <td>
                 <audio controls="">
-                    <source src="wav/org/6.wav" type="audio/wav"></source>
+                    <source src="wav_clean/input/vietnamese/arctic_b0450.wav" type="audio/wav"></source>
                 </audio>
             </td>
             <td>
                 <audio controls="">
-                    <source src="wav/neutralize/6.wav" type="audio/wav"></source>
+                    <source src="wav/baseline/vietnamese/b0450.wav" type="audio/wav"></source>
+                </audio>
+            </td>
+
+           <td>
+                <audio controls="">
+                    <source src="wav_clean/without_synthetic/vietnamese/b0450.wav" type="audio/wav"></source>
                 </audio>
             </td>
 
             <td>
                 <audio controls="">
-                    <source src="wav/pronunciation_correct/6.wav" type="audio/wav"></source>
+                    <source src="wav_clean/proposed/vietnamese/b0450.wav" type="audio/wav"></source>
+                </audio>
+            </td>
+            <td>
+                <audio controls="">
+                    <source src="wav_clean/ground_truth/vietnamese/b0450.wav" type="audio/wav"></source>
+                </audio>
+            </td>
+
+
+        </tr>
+        </tbody>
+    </table>>
+
+
+
+      <table width="100%" class="samples">
+        <tbody>
+        <tr>
+
+
+            <td rowspan="2"><b>Input with Indian accent</b></td>
+
+            <td colspan="8"><b>Accent conversion and  Improving Pronunciation</b></td>
+        </tr>
+
+        <tr>
+            <td>
+                <b>Baseline</b>
+            </td>
+            <td>
+                <b>Fine-tuning with KL loss</b>
+            </td>
+            <td>
+                <b>Fine-tuning with KL loss and Synthetic Ground-Truth</b>
+            </td>
+             <td>
+                <b>Synthetic Ground-Truth</b>
+            </td>
+
+        </tr>
+       <tr>
+            <!--        <td rowspan="3">TXHC</td>-->
+
+            <td>
+                <audio controls="">
+                    <source src="wav_clean/input/indian/arctic_a0007.wav" type="audio/wav"></source>
+                </audio>
+            </td>
+            <td>
+                <audio controls="">
+                    <source src="wav_clean/baseline/indian/a0007.wav" type="audio/wav"></source>
+                </audio>
+            </td>
+
+           <td>
+                <audio controls="">
+                    <source src="wav_clean/without_synthetic/indian/a0007.wav" type="audio/wav"></source>
+                </audio>
+            </td>
+
+            <td>
+                <audio controls="">
+                    <source src="wav_clean/proposed/indian/a0007.wav" type="audio/wav"></source>
+                </audio>
+            </td>
+            <td>
+                <audio controls="">
+                    <source src="wav_clean/ground_truth/indian/a0007.wav" type="audio/wav"></source>
                 </audio>
             </td>
 
@@ -267,18 +495,29 @@
 
             <td>
                 <audio controls="">
-                    <source src="wav/org/7.wav" type="audio/wav"></source>
+                    <source src="wav_clean/input/indian/arctic_a0012.wav" type="audio/wav"></source>
                 </audio>
             </td>
             <td>
                 <audio controls="">
-                    <source src="wav/neutralize/7.wav" type="audio/wav"></source>
+                    <source src="wav_clean/baseline/indian/a0012.wav" type="audio/wav"></source>
+                </audio>
+            </td>
+
+           <td>
+                <audio controls="">
+                    <source src="wav_clean/without_synthetic/indian/a0012.wav" type="audio/wav"></source>
                 </audio>
             </td>
 
             <td>
                 <audio controls="">
-                    <source src="wav/pronunciation_correct/7.wav" type="audio/wav"></source>
+                    <source src="wav_clean/proposed/indian/a0012.wav" type="audio/wav"></source>
+                </audio>
+            </td>
+            <td>
+                <audio controls="">
+                    <source src="wav_clean/ground_truth/indian/a0012.wav" type="audio/wav"></source>
                 </audio>
             </td>
 
@@ -290,18 +529,123 @@
 
             <td>
                 <audio controls="">
-                    <source src="wav/org/8.wav" type="audio/wav"></source>
+                    <source src="wav_clean/input/indian/arctic_a0581.wav" type="audio/wav"></source>
                 </audio>
             </td>
             <td>
                 <audio controls="">
-                    <source src="wav/neutralize/8.wav" type="audio/wav"></source>
+                    <source src="wav_clean/baseline/indian/a0581.wav" type="audio/wav"></source>
+                </audio>
+            </td>
+
+           <td>
+                <audio controls="">
+                    <source src="wav_clean/without_synthetic/indian/a0581.wav" type="audio/wav"></source>
                 </audio>
             </td>
 
             <td>
                 <audio controls="">
-                    <source src="wav/pronunciation_correct/8.wav" type="audio/wav"></source>
+                    <source src="wav_clean/proposed/indian/a0581.wav" type="audio/wav"></source>
+                </audio>
+            </td>
+            <td>
+                <audio controls="">
+                    <source src="wav_clean/ground_truth/indian/a0581.wav" type="audio/wav"></source>
+                </audio>
+            </td>
+
+
+        </tr>
+        <tr>
+            <!--        <td rowspan="3">TXHC</td>-->
+
+            <td>
+                <audio controls="">
+                    <source src="wav_clean/input/indian/arctic_b0065.wav" type="audio/wav"></source>
+                </audio>
+            </td>
+            <td>
+                <audio controls="">
+                    <source src="wav_clean/baseline/indian/b0065.wav" type="audio/wav"></source>
+                </audio>
+            </td>
+
+           <td>
+                <audio controls="">
+                    <source src="wav_clean/without_synthetic/indian/b0065.wav" type="audio/wav"></source>
+                </audio>
+            </td>
+
+            <td>
+                <audio controls="">
+                    <source src="wav_clean/proposed/indian/b0065.wav" type="audio/wav"></source>
+                </audio>
+            </td>
+            <td>
+                <audio controls="">
+                    <source src="wav_clean/ground_truth/indian/b0065.wav" type="audio/wav"></source>
+                </audio>
+            </td>
+
+
+        </tr>
+        </tbody>
+    </table>>
+
+        <table width="100%" class="samples">
+        <tbody>
+        <tr>
+
+
+            <td rowspan="2"><b>Input with Korean accent</b></td>
+
+            <td colspan="8"><b>Accent conversion and  Improving Pronunciation</b></td>
+        </tr>
+
+        <tr>
+            <td>
+                <b>Baseline</b>
+            </td>
+            <td>
+                <b>Fine-tuning with KL loss</b>
+            </td>
+            <td>
+                <b>Fine-tuning with KL loss and Synthetic Ground-Truth</b>
+            </td>
+             <td>
+                <b>Synthetic Ground-Truth</b>
+            </td>
+
+        </tr>
+       <tr>
+            <!--        <td rowspan="3">TXHC</td>-->
+
+            <td>
+                <audio controls="">
+                    <source src="wav_clean/input/korean/arctic_a0087.wav" type="audio/wav"></source>
+                </audio>
+            </td>
+            <td>
+                <audio controls="">
+                    <source src="wav/baseline/korean/a0087.wav" type="audio/wav"></source>
+                </audio>
+            </td>
+
+           <td>
+                <audio controls="">
+                    <source src="wav_clean/without_synthetic/korean/a0087.wav" type="audio/wav"></source>
+                </audio>
+            </td>
+
+            <td>
+                <audio controls="">
+                    <source src="wav_clean/proposed/korean/a0087.wav" type="audio/wav"></source>
+                </audio>
+            </td>
+            <td>
+                <audio controls="">
+                    <source src="wav_clean/ground_truth/korean/a0087.wav" type="audio/wav"></source>
                 </audio>
             </td>
 
@@ -313,18 +657,29 @@
 
             <td>
                 <audio controls="">
-                    <source src="wav/org/9.wav" type="audio/wav"></source>
+                    <source src="wav_clean/input/korean/arctic_b0044.wav" type="audio/wav"></source>
                 </audio>
             </td>
             <td>
                 <audio controls="">
-                    <source src="wav/neutralize/9.wav" type="audio/wav"></source>
+                    <source src="wav/baseline/korean/b0044.wav" type="audio/wav"></source>
+                </audio>
+            </td>
+
+           <td>
+                <audio controls="">
+                    <source src="wav_clean/without_synthetic/korean/b0044.wav" type="audio/wav"></source>
                 </audio>
             </td>
 
             <td>
                 <audio controls="">
-                    <source src="wav/pronunciation_correct/9.wav" type="audio/wav"></source>
+                    <source src="wav_clean/proposed/korean/b0044.wav" type="audio/wav"></source>
+                </audio>
+            </td>
+            <td>
+                <audio controls="">
+                    <source src="wav_clean/ground_truth/korean/b0044.wav" type="audio/wav"></source>
                 </audio>
             </td>
 
@@ -336,18 +691,122 @@
 
             <td>
                 <audio controls="">
-                    <source src="wav/org/10.wav" type="audio/wav"></source>
+                    <source src="wav_clean/input/korean/arctic_b0280.wav" type="audio/wav"></source>
                 </audio>
             </td>
             <td>
                 <audio controls="">
-                    <source src="wav/neutralize/10.wav" type="audio/wav"></source>
+                    <source src="wav/baseline/korean/b0280.wav" type="audio/wav"></source>
+                </audio>
+            </td>
+
+           <td>
+                <audio controls="">
+                    <source src="wav_clean/without_synthetic/korean/b0280.wav" type="audio/wav"></source>
                 </audio>
             </td>
 
             <td>
                 <audio controls="">
-                    <source src="wav/pronunciation_correct/10.wav" type="audio/wav"></source>
+                    <source src="wav_clean/proposed/korean/b0280.wav" type="audio/wav"></source>
+                </audio>
+            </td>
+            <td>
+                <audio controls="">
+                    <source src="wav_clean/ground_truth/korean/b0280.wav" type="audio/wav"></source>
+                </audio>
+            </td>
+
+
+        </tr>
+        <tr>
+            <!--        <td rowspan="3">TXHC</td>-->
+
+            <td>
+                <audio controls="">
+                    <source src="wav_clean/input/korean/arctic_b0534.wav" type="audio/wav"></source>
+                </audio>
+            </td>
+            <td>
+                <audio controls="">
+                    <source src="wav/baseline/korean/b0534.wav" type="audio/wav"></source>
+                </audio>
+            </td>
+
+           <td>
+                <audio controls="">
+                    <source src="wav_clean/without_synthetic/korean/b0534.wav" type="audio/wav"></source>
+                </audio>
+            </td>
+
+            <td>
+                <audio controls="">
+                    <source src="wav_clean/proposed/korean/b0534.wav" type="audio/wav"></source>
+                </audio>
+            </td>
+            <td>
+                <audio controls="">
+                    <source src="wav_clean/ground_truth/korean/b0534.wav" type="audio/wav"></source>
+                </audio>
+            </td>
+
+
+        </tr>
+        </tbody>
+    </table>>
+    <table width="100%" class="samples">
+        <tbody>
+        <tr>
+
+
+            <td rowspan="2"><b>Input with Chinese accent</b></td>
+
+            <td colspan="8"><b>Accent conversion and  Improving Pronunciation</b></td>
+        </tr>
+
+        <tr>
+            <td>
+                <b>Baseline</b>
+            </td>
+            <td>
+                <b>Fine-tuning with KL loss</b>
+            </td>
+            <td>
+                <b>Fine-tuning with KL loss and Synthetic Ground-Truth</b>
+            </td>
+             <td>
+                <b>Synthetic Ground-Truth</b>
+            </td>
+
+        </tr>
+       <tr>
+            <!--        <td rowspan="3">TXHC</td>-->
+
+            <td>
+                <audio controls="">
+                    <source src="wav_clean/input/chinese/a0011.wav" type="audio/wav"></source>
+                </audio>
+            </td>
+            <td>
+                <audio controls="">
+                    <source src="wav/baseline/chinese/a0011.wav" type="audio/wav"></source>
+                </audio>
+            </td>
+
+           <td>
+                <audio controls="">
+                    <source src="wav_clean/without_synthetic/chinese/a0011.wav" type="audio/wav"></source>
+                </audio>
+            </td>
+
+            <td>
+                <audio controls="">
+                    <source src="wav_clean/proposed/chinese/a0011.wav" type="audio/wav"></source>
+                </audio>
+            </td>
+            <td>
+                <audio controls="">
+                    <source src="wav_clean/ground_truth/chinese/a0011.wav" type="audio/wav"></source>
                 </audio>
             </td>
 
@@ -359,18 +818,29 @@
 
             <td>
                 <audio controls="">
-                    <source src="wav/org/11.wav" type="audio/wav"></source>
+                    <source src="wav_clean/input/chinese/a0021.wav" type="audio/wav"></source>
                 </audio>
             </td>
             <td>
                 <audio controls="">
-                    <source src="wav/neutralize/11.wav" type="audio/wav"></source>
+                    <source src="wav/baseline/chinese/a0021.wav" type="audio/wav"></source>
+                </audio>
+            </td>
+
+           <td>
+                <audio controls="">
+                    <source src="wav_clean/without_synthetic/chinese/a0021.wav" type="audio/wav"></source>
                 </audio>
             </td>
 
             <td>
                 <audio controls="">
-                    <source src="wav/pronunciation_correct/11.wav" type="audio/wav"></source>
+                    <source src="wav_clean/proposed/chinese/a0021.wav" type="audio/wav"></source>
+                </audio>
+            </td>
+            <td>
+                <audio controls="">
+                    <source src="wav_clean/ground_truth/chinese/a0021.wav" type="audio/wav"></source>
                 </audio>
             </td>
 
@@ -382,94 +852,68 @@
 
             <td>
                 <audio controls="">
-                    <source src="wav/org/12.wav" type="audio/wav"></source>
+                    <source src="wav_clean/input/chinese/a0027.wav" type="audio/wav"></source>
                 </audio>
             </td>
             <td>
                 <audio controls="">
-                    <source src="wav/neutralize/12.wav" type="audio/wav"></source>
+                    <source src="wav/baseline/chinese/a0027.wav" type="audio/wav"></source>
+                </audio>
+            </td>
+
+           <td>
+                <audio controls="">
+                    <source src="wav_clean/without_synthetic/chinese/a0027.wav" type="audio/wav"></source>
                 </audio>
             </td>
 
             <td>
                 <audio controls="">
-                    <source src="wav/pronunciation_correct/12.wav" type="audio/wav"></source>
+                    <source src="wav_clean/proposed/chinese/a0027.wav" type="audio/wav"></source>
+                </audio>
+            </td>
+            <td>
+                <audio controls="">
+                    <source src="wav_clean/ground_truth/chinese/a0027.wav" type="audio/wav"></source>
                 </audio>
             </td>
 
 
         </tr>
-
         <tr>
             <!--        <td rowspan="3">TXHC</td>-->
 
             <td>
                 <audio controls="">
-                    <source src="wav/org/13.wav" type="audio/wav"></source>
+                    <source src="wav_clean/input/chinese/a0032.wav" type="audio/wav"></source>
                 </audio>
             </td>
             <td>
                 <audio controls="">
-                    <source src="wav/neutralize/13.wav" type="audio/wav"></source>
+                    <source src="wav/baseline/chinese/a0032.wav" type="audio/wav"></source>
+                </audio>
+            </td>
+
+           <td>
+                <audio controls="">
+                    <source src="wav_clean/without_synthetic/chinese/a0032.wav" type="audio/wav"></source>
                 </audio>
             </td>
 
             <td>
                 <audio controls="">
-                    <source src="wav/pronunciation_correct/13.wav" type="audio/wav"></source>
+                    <source src="wav_clean/proposed/chinese/a0032.wav" type="audio/wav"></source>
+                </audio>
+            </td>
+            <td>
+                <audio controls="">
+                    <source src="wav_clean/ground_truth/chinese/a0032.wav" type="audio/wav"></source>
                 </audio>
             </td>
 
 
         </tr>
-
-
-        <tr>
-            <!--        <td rowspan="3">TXHC</td>-->
-
-            <td>
-                <audio controls="">
-                    <source src="wav/org/14.wav" type="audio/wav"></source>
-                </audio>
-            </td>
-            <td>
-                <audio controls="">
-                    <source src="wav/neutralize/14.wav" type="audio/wav"></source>
-                </audio>
-            </td>
-
-            <td>
-                <audio controls="">
-                    <source src="wav/pronunciation_correct/14.wav" type="audio/wav"></source>
-                </audio>
-            </td>
-
-
-        </tr>
-
-        <tr>
-            <!--        <td rowspan="3">TXHC</td>-->
-
-            <td>
-                <audio controls="">
-                    <source src="wav/org/15.wav" type="audio/wav"></source>
-                </audio>
-            </td>
-            <td>
-                <audio controls="">
-                    <source src="wav/neutralize/15.wav" type="audio/wav"></source>
-                </audio>
-            </td>
-
-            <td>
-                <audio controls="">
-                    <source src="wav/pronunciation_correct/15.wav" type="audio/wav"></source>
-                </audio>
-            </td>
-
-
-        </tr>
-
+        </tbody>
 
 </main>
 </body>
