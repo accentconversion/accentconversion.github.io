@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f70e8be3-87cc-4c54-8eb4-c7e1bd492eb7" name="Default Changelist" comment="" />
+    <list default="true" id="f70e8be3-87cc-4c54-8eb4-c7e1bd492eb7" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/streaming_demo.html" beforeDir="false" afterPath="$PROJECT_DIR$/streaming_demo.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,6 +21,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="JupyterTrust" id="3c1d4b00-081e-4a45-a46f-67ab5025efab" />
   <component name="ProjectId" id="2WmuJzRTUR6aaaXpLWiITPiqI0r" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -49,6 +54,7 @@
       <workItem from="1730801481057" duration="599000" />
       <workItem from="1730849061096" duration="599000" />
       <workItem from="1740031840211" duration="1004000" />
+      <workItem from="1740477380564" duration="1843000" />
     </task>
     <servers />
   </component>

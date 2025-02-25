@@ -1,21 +1,8 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171609755-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-
-        gtag('js', new Date());
-
-        gtag('config', 'UA-171609755-1');
-    </script>
-    <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
-    <title>Accent conversion sample</title>
+    <meta charset="UTF-8">
+    <title>Streaming Accent conversion sample</title>
 
     <style>
         body {
@@ -101,90 +88,63 @@
 <table class="title">
     <tbody>
     <tr>
-        <td>
-            <h1>Accent conversion demo audios</h1>
-        </td>
+
     </tbody>
 </table>
 <main>
 
 
+    <ul>
+        <li><b>Input accented speech</b>: The original videos</li>
+        <li><b>Streaming Accent Conversion and Improving Pronunciation</b>:  The converted videos
+        </li>
 
 
-    <table width="100%" class="samples">
+    </ul>
+
+        <table width="100%" class="samples">
         <tbody>
         <tr>
 
 
-            <td rowspan="2"><b>Input</b></td>
+            <td rowspan="2"><b>Input Video with Indian accent</b></td>
 
-            <td colspan="4"><b>Accent conversion</b></td>
+            <td colspan="4"><b>Output Video for Accent conversion and Improving Pronunciation </b></td>
         </tr>
 
         <tr>
+
             <td>
-                <b>Proposed</b>
+                <b>Non-Streaming model</b>
             </td>
             <td>
-                <b>Baseline-1</b>
+                <b>Streaming model</b>
             </td>
-            <td>
-                <b>Baseline-2</b>
-            </td>
-            <td>
-                <b>Baseline-3</b>
-            </td>
-        </tr>
+
 
         </tr>
-                <tr>
+       <tr>
             <!--        <td rowspan="3">TXHC</td>-->
 
             <td>
-                <audio controls="">
-                    <source src="wav/input/txhc_1083.wav" type="audio/wav"></source>
-                </audio>
+                <video controls width="400" height="300">
+                    <source src="video_streaming_input/indian/example_3-cut.mp4" type="video/mp4"></source>
+                </video>
             </td>
             <td>
-                <audio controls="">
-                    <source src="wav/my_output/txhc_1083.wav" type="audio/wav"></source>
-                </audio>
-            </td>
-            <td>
-                <audio controls="">
-                    <source src="wav/baseline/txhc_1083.wav" type="audio/wav"></source>
-                </audio>
-            </td>
-            <td>
-
-            </td>
-            <td>
-
+                <video controls width="400" height="300">
+                   <source src="video_non_streaming_output/indian/example_3-cut.mp4" type="video/mp4"></source>
+                </video>
             </td>
 
-        </tr>
-        <tr>
-            <!--        <td rowspan="3">TXHC</td>-->
+           <td>
+                <video controls width="400" height="300">
+                     <source src="video_streaming_output/indian/example_3-cut.mp4" type="video/mp4"></source>
+                </video>
+            </td>
 
-            <td>
-                <audio controls="">
-                    <source src="wav/input/ykwk_1108.wav" type="audio/wav"></source>
-                </audio>
-            </td>
-            <td>
-                <audio controls="">
-                    <source src="wav/my_output/ykwk_1108.wav" type="audio/wav"></source>
-                </audio>
-            </td>
-            <td>
-                <audio controls="">
-                    <source src="wav/baseline/ykwk_1108.wav" type="audio/wav"></source>
-                </audio>
-            </td>
-            <td>
 
-            </td>
-            <td>
+
 
 
         </tr>
@@ -193,243 +153,812 @@
             <!--        <td rowspan="3">TXHC</td>-->
 
             <td>
-                <audio controls="">
-                    <source src="wav/input/ykwk_1116.wav" type="audio/wav"></source>
-                </audio>
+                <video controls width="400" height="300">
+                      <source src="video_streaming_input/indian/indian_news_1-cut.mp4" type="video/mp4"></source>
+                </video>
             </td>
             <td>
-                <audio controls="">
-                    <source src="wav/my_output/ykwk_1116.wav" type="audio/wav"></source>
-                </audio>
-            </td>
-            <td>
-                <audio controls="">
-                    <source src="wav/baseline/ykwk_1116.wav" type="audio/wav"></source>
-                </audio>
-            </td>
-            <td>
-
-            </td>
-            <td>
-
+                <video controls width="400" height="300">
+                    <source src="video_non_streaming_output/indian/indian_news_1-cut.mp4" type="video/mp4"></source>
+                </video>
             </td>
 
-        </tr>
-                <tr>
-            <!--        <td rowspan="3">TXHC</td>-->
+           <td>
+                <video controls width="400" height="300">
+                      <source src="video_streaming_output/indian/indian_news_1-cut.mp4" type="video/mp4"></source>
+                </video>
+            </td>
 
-            <td>
-                <audio controls="">
-                    <source src="wav/input/input_0.wav" type="audio/wav"></source>
-                </audio>
-            </td>
-            <td>
-                <audio controls="">
-                    <source src="wav/my_output/input_0.wav" type="audio/wav"></source>
-                </audio>
-            </td>
-            <td>
 
-            </td>
-            <td>
-                <audio controls="">
-                    <source src="wav/baseline/input_0.wav" type="audio/wav"></source>
-                </audio>
-            </td>
-            <td>
 
 
         </tr>
+
         <tr>
             <!--        <td rowspan="3">TXHC</td>-->
 
             <td>
-                <audio controls="">
-                    <source src="wav/input/input_1.wav" type="audio/wav"></source>
-                </audio>
+                <video controls width="400" height="300">
+                      <source src="video_streaming_input/indian/indian_news_3-cut.mp4" type="video/mp4"></source>
+                </video>
             </td>
             <td>
-                <audio controls="">
-                    <source src="wav/my_output/input_1.wav" type="audio/wav"></source>
-                </audio>
+                <video controls width="400" height="300">
+                     <source src="video_non_streaming_output/indian/indian_news_3-cut.mp4" type="video/mp4"></source>
+                </video>
             </td>
-            <td>
 
+           <td>
+                <video controls width="400" height="300">
+                     <source src="video_streaming_output/indian/indian_news_3-cut.mp4" type="video/mp4"></source>
+                </video>
             </td>
-            <td>
-                <audio controls="">
-                    <source src="wav/baseline/input_1.wav" type="audio/wav"></source>
-                </audio>
-            </td>
-            <td>
+
+
+
 
 
         </tr>
+
+        </tbody>
+    </table>
+         <table width="100%" class="samples">
+        <tbody>
+        <tr>
+
+
+            <td rowspan="2"><b>Input Video with Chinese accent</b></td>
+
+            <td colspan="4"><b>Output Video for Accent conversion and Improving Pronunciation </b></td>
+        </tr>
+
+        <tr>
+
+            <td>
+                <b>Non-Streaming model</b>
+            </td>
+            <td>
+                <b>Streaming model</b>
+            </td>
+
+
+        </tr>
+       <tr>
+            <!--        <td rowspan="3">TXHC</td>-->
+
+            <td>
+                <video controls width="400" height="300">
+                    <source src="video_streaming_input/chinese/example_1-cut.mp4" type="video/mp4"></source>
+                </video>
+            </td>
+            <td>
+                <video controls width="400" height="300">
+                   <source src="video_non_streaming_output/chinese/example_1-cut.mp4" type="video/mp4"></source>
+                </video>
+            </td>
+
+           <td>
+                <video controls width="400" height="300">
+                     <source src="video_streaming_output/chinese/example_1-cut.mp4" type="video/mp4"></source>
+                </video>
+            </td>
+
+
+
+
+
+        </tr>
+
         <tr>
             <!--        <td rowspan="3">TXHC</td>-->
 
             <td>
-                <audio controls="">
-                    <source src="wav/input/input_2.wav" type="audio/wav"></source>
-                </audio>
+                <video controls width="400" height="300">
+                      <source src="video_streaming_input/chinese/example_4-cut.mp4" type="video/mp4"></source>
+                </video>
             </td>
             <td>
-                <audio controls="">
-                    <source src="wav/my_output/input_2.wav" type="audio/wav"></source>
-                </audio>
+                <video controls width="400" height="300">
+                    <source src="video_non_streaming_output/chinese/example_4-cut.mp4" type="video/mp4"></source>
+                </video>
             </td>
-            <td>
 
+           <td>
+                <video controls width="400" height="300">
+                      <source src="video_streaming_output/chinese/example_4-cut.mp4" type="video/mp4"></source>
+                </video>
             </td>
-            <td>
-                <audio controls="">
-                    <source src="wav/baseline/input_2.wav" type="audio/wav"></source>
-                </audio>
-            </td>
-            <td>
+
+
 
 
         </tr>
+
         <tr>
             <!--        <td rowspan="3">TXHC</td>-->
 
             <td>
-                <audio controls="">
-                    <source src="wav/input/input_3.wav" type="audio/wav"></source>
-                </audio>
+                <video controls width="400" height="300">
+                      <source src="video_streaming_input/chinese/Ceo_Zoom_full-cut.mp4" type="video/mp4"></source>
+                </video>
             </td>
             <td>
-                <audio controls="">
-                    <source src="wav/my_output/input_3.wav" type="audio/wav"></source>
-                </audio>
+                <video controls width="400" height="300">
+                     <source src="video_non_streaming_output/chinese/Ceo_Zoom_full-cut.mp4" type="video/mp4"></source>
+                </video>
             </td>
-            <td>
 
+           <td>
+                <video controls width="400" height="300">
+                     <source src="video_streaming_output/indian/chinese/Ceo_Zoom_full-cut.mp4" type="video/mp4"></source>
+                </video>
             </td>
-            <td>
-                <audio controls="">
-                    <source src="wav/baseline/input_3.wav" type="audio/wav"></source>
-                </audio>
-            </td>
-            <td>
+
+
+
 
 
         </tr>
-         <tr>
-            <!--        <td rowspan="3">TXHC</td>-->
 
-            <td>
-                <audio controls="">
-                    <source src="wav/input/THV_arctic_a0002.wav" type="audio/wav"></source>
-                </audio>
-            </td>
-            <td>
-                <audio controls="">
-                    <source src="wav/my_output/THV_arctic_a0002.wav" type="audio/wav"></source>
-                </audio>
-            </td>
-            <td>
-
-            </td>
-            <td>
-
-            </td>
-            <td>
-                <audio controls="">
-                    <source src="wav/baseline/THV_arctic_a0002.wav" type="audio/wav"></source>
-                </audio>
-
-            </td>
-
-        </tr>
-         <tr>
-            <!--        <td rowspan="3">TXHC</td>-->
-
-            <td>
-                <audio controls="">
-                    <source src="wav/input/THV_arctic_a0003.wav" type="audio/wav"></source>
-                </audio>
-            </td>
-            <td>
-                <audio controls="">
-                    <source src="wav/my_output/THV_arctic_a0003.wav" type="audio/wav"></source>
-                </audio>
-            </td>
-            <td>
-
-            </td>
-            <td>
-
-            </td>
-            <td>
-                <audio controls="">
-                    <source src="wav/baseline/THV_arctic_a0003.wav" type="audio/wav"></source>
-                </audio>
-
-            </td>
-
-        </tr>
-        <tr>
-            <!--        <td rowspan="3">TXHC</td>-->
-
-            <td>
-                <audio controls="">
-                    <source src="wav/input/HKK_arctic_a0001.wav" type="audio/wav"></source>
-                </audio>
-            </td>
-            <td>
-                <audio controls="">
-                    <source src="wav/my_output/HKK_a0001.wav" type="audio/wav"></source>
-                </audio>
-            </td>
-            <td>
-
-            </td>
-            <td>
-
-            </td>
-            <td>
-                <audio controls="">
-                    <source src="wav/baseline/HKK_arctic_a0001.wav" type="audio/wav"></source>
-                </audio>
-
-            </td>
-
-        </tr>
-        <tr>
-            <!--        <td rowspan="3">TXHC</td>-->
-
-            <td>
-                <audio controls="">
-                    <source src="wav/input/HKK_arctic_a0002.wav" type="audio/wav"></source>
-                </audio>
-            </td>
-            <td>
-                <audio controls="">
-                    <source src="wav/my_output/HKK_a0002.wav" type="audio/wav"></source>
-                </audio>
-            </td>
-            <td>
-
-            </td>
-            <td>
-
-            </td>
-            <td>
-                <audio controls="">
-                    <source src="wav/baseline/HKK_arctic_a0002.wav" type="audio/wav"></source>
-                </audio>
-
-            </td>
-
-        </tr>
+        </tbody>
+    </table>
+<!--    <table width="100%" class="samples">-->
+<!--        <tbody>-->
+<!--        <tr>-->
 
 
+<!--            <td rowspan="2"><b>Input with Vietnamese accent</b></td>-->
+
+<!--            <td colspan="8"><b>Accent conversion and  Improving Pronunciation</b></td>-->
+<!--        </tr>-->
+
+<!--        <tr>-->
+<!--            <td>-->
+<!--                <b>Baseline</b>-->
+<!--            </td>-->
+<!--            <td>-->
+<!--                <b>Non-Streaming Model</b>-->
+<!--            </td>-->
+<!--            <td>-->
+<!--                <b>Streaming model</b>-->
+<!--            </td>-->
+<!--             <td>-->
+<!--                <b>Synthetic Ground-Truth</b>-->
+<!--            </td>-->
+
+<!--        </tr>-->
+<!--         <tr>-->
+<!--            &lt;!&ndash;        <td rowspan="3">TXHC</td>&ndash;&gt;-->
+
+<!--            <td>-->
+<!--                <audio controls="">-->
+<!--                    <source src="wav_clean/input/vietnamese/arctic_a0023.wav" type="audio/wav"></source>-->
+<!--                </audio>-->
+<!--            </td>-->
+<!--            <td>-->
+<!--                <audio controls="">-->
+<!--                    <source src="wav/baseline/vietnamese/a0023.wav" type="audio/wav"></source>-->
+<!--                </audio>-->
+<!--            </td>-->
+
+<!--           <td>-->
+<!--                <audio controls="">-->
+<!--                    <source src="wav_clean/without_synthetic/vietnamese/a0023.wav" type="audio/wav"></source>-->
+<!--                </audio>-->
+<!--            </td>-->
+
+<!--            <td>-->
+<!--                <audio controls="">-->
+<!--                    <source src="wav_clean/proposed/vietnamese/a0023.wav" type="audio/wav"></source>-->
+<!--                </audio>-->
+<!--            </td>-->
+<!--            <td>-->
+<!--                <audio controls="">-->
+<!--                    <source src="wav_clean/ground_truth/vietnamese/a0023.wav" type="audio/wav"></source>-->
+<!--                </audio>-->
+<!--            </td>-->
+
+
+<!--        </tr>-->
+
+<!--         <tr>-->
+<!--            &lt;!&ndash;        <td rowspan="3">TXHC</td>&ndash;&gt;-->
+
+<!--            <td>-->
+<!--                <audio controls="">-->
+<!--                    <source src="wav_clean/input/vietnamese/arctic_a0073.wav" type="audio/wav"></source>-->
+<!--                </audio>-->
+<!--            </td>-->
+<!--            <td>-->
+<!--                <audio controls="">-->
+<!--                    <source src="wav/baseline/vietnamese/a0073.wav" type="audio/wav"></source>-->
+<!--                </audio>-->
+<!--            </td>-->
+
+<!--           <td>-->
+<!--                <audio controls="">-->
+<!--                    <source src="wav_clean/without_synthetic/vietnamese/a0073.wav" type="audio/wav"></source>-->
+<!--                </audio>-->
+<!--            </td>-->
+
+<!--            <td>-->
+<!--                <audio controls="">-->
+<!--                    <source src="wav_clean/proposed/vietnamese/a0073.wav" type="audio/wav"></source>-->
+<!--                </audio>-->
+<!--            </td>-->
+<!--            <td>-->
+<!--                <audio controls="">-->
+<!--                    <source src="wav_clean/ground_truth/vietnamese/a0073.wav" type="audio/wav"></source>-->
+<!--                </audio>-->
+<!--            </td>-->
+
+
+<!--        </tr>-->
+
+<!--         <tr>-->
+<!--            &lt;!&ndash;        <td rowspan="3">TXHC</td>&ndash;&gt;-->
+
+<!--            <td>-->
+
+<!--                <audio controls="">-->
+<!--                    <source src="wav_clean/input/vietnamese/arctic_b0358.wav" type="audio/wav"></source>-->
+<!--                </audio>-->
+<!--            </td>-->
+<!--            <td>-->
+<!--                <audio controls="">-->
+<!--                    <source src="wav/baseline/vietnamese/b0358.wav" type="audio/wav"></source>-->
+<!--                </audio>-->
+<!--            </td>-->
+
+<!--           <td>-->
+<!--                <audio controls="">-->
+<!--                    <source src="wav_clean/without_synthetic/vietnamese/b0358.wav" type="audio/wav"></source>-->
+<!--                </audio>-->
+<!--            </td>-->
+
+<!--            <td>-->
+<!--                <audio controls="">-->
+<!--                    <source src="wav_clean/proposed/vietnamese/b0358.wav" type="audio/wav"></source>-->
+<!--                </audio>-->
+<!--            </td>-->
+<!--            <td>-->
+<!--                <audio controls="">-->
+<!--                    <source src="wav_clean/ground_truth/vietnamese/b0358.wav" type="audio/wav"></source>-->
+<!--                </audio>-->
+<!--            </td>-->
+
+
+<!--        </tr>-->
+
+<!--        <tr>-->
+<!--            &lt;!&ndash;        <td rowspan="3">TXHC</td>&ndash;&gt;-->
+
+<!--            <td>-->
+<!--                <audio controls="">-->
+<!--                    <source src="wav_clean/input/vietnamese/arctic_b0450.wav" type="audio/wav"></source>-->
+<!--                </audio>-->
+<!--            </td>-->
+<!--            <td>-->
+<!--                <audio controls="">-->
+<!--                    <source src="wav/baseline/vietnamese/b0450.wav" type="audio/wav"></source>-->
+<!--                </audio>-->
+<!--            </td>-->
+
+<!--           <td>-->
+<!--                <audio controls="">-->
+<!--                    <source src="wav_clean/without_synthetic/vietnamese/b0450.wav" type="audio/wav"></source>-->
+<!--                </audio>-->
+<!--            </td>-->
+
+<!--            <td>-->
+<!--                <audio controls="">-->
+<!--                    <source src="wav_clean/proposed/vietnamese/b0450.wav" type="audio/wav"></source>-->
+<!--                </audio>-->
+<!--            </td>-->
+<!--            <td>-->
+<!--                <audio controls="">-->
+<!--                    <source src="wav_clean/ground_truth/vietnamese/b0450.wav" type="audio/wav"></source>-->
+<!--                </audio>-->
+<!--            </td>-->
+
+
+<!--        </tr>-->
+<!--        </tbody>-->
+<!--    </table>-->
 
 
 
+<!--      <table width="100%" class="samples">-->
+<!--        <tbody>-->
+<!--        <tr>-->
 
+
+<!--            <td rowspan="2"><b>Input with Indian accent</b></td>-->
+
+<!--            <td colspan="8"><b>Accent conversion and  Improving Pronunciation</b></td>-->
+<!--        </tr>-->
+
+<!--        <tr>-->
+<!--            <td>-->
+<!--                <b>Baseline</b>-->
+<!--            </td>-->
+<!--            <td>-->
+<!--                <b>Fine-tuning with knowledge distillation loss</b>-->
+<!--            </td>-->
+<!--            <td>-->
+<!--                <b>Fine-tuning with knowledge distillation loss and Synthetic Ground-Truth</b>-->
+<!--            </td>-->
+<!--             <td>-->
+<!--                <b>Synthetic Ground-Truth</b>-->
+<!--            </td>-->
+
+<!--        </tr>-->
+<!--       <tr>-->
+<!--            &lt;!&ndash;        <td rowspan="3">TXHC</td>&ndash;&gt;-->
+
+<!--            <td>-->
+<!--                <audio controls="">-->
+<!--                    <source src="wav_clean/input/indian/arctic_a0007.wav" type="audio/wav"></source>-->
+<!--                </audio>-->
+<!--            </td>-->
+<!--            <td>-->
+<!--                <audio controls="">-->
+<!--                    <source src="wav_clean/baseline/indian/a0007.wav" type="audio/wav"></source>-->
+<!--                </audio>-->
+<!--            </td>-->
+
+<!--           <td>-->
+<!--                <audio controls="">-->
+<!--                    <source src="wav_clean/without_synthetic/indian/a0007.wav" type="audio/wav"></source>-->
+<!--                </audio>-->
+<!--            </td>-->
+
+<!--            <td>-->
+<!--                <audio controls="">-->
+<!--                    <source src="wav_clean/proposed/indian/a0007.wav" type="audio/wav"></source>-->
+<!--                </audio>-->
+<!--            </td>-->
+<!--            <td>-->
+<!--                <audio controls="">-->
+<!--                    <source src="wav_clean/ground_truth/indian/a0007.wav" type="audio/wav"></source>-->
+<!--                </audio>-->
+<!--            </td>-->
+
+
+<!--        </tr>-->
+
+<!--        <tr>-->
+<!--            &lt;!&ndash;        <td rowspan="3">TXHC</td>&ndash;&gt;-->
+
+<!--            <td>-->
+<!--                <audio controls="">-->
+<!--                    <source src="wav_clean/input/indian/arctic_a0012.wav" type="audio/wav"></source>-->
+<!--                </audio>-->
+<!--            </td>-->
+<!--            <td>-->
+<!--                <audio controls="">-->
+<!--                    <source src="wav_clean/baseline/indian/a0012.wav" type="audio/wav"></source>-->
+<!--                </audio>-->
+<!--            </td>-->
+
+<!--           <td>-->
+<!--                <audio controls="">-->
+<!--                    <source src="wav_clean/without_synthetic/indian/a0012.wav" type="audio/wav"></source>-->
+<!--                </audio>-->
+<!--            </td>-->
+
+<!--            <td>-->
+<!--                <audio controls="">-->
+<!--                    <source src="wav_clean/proposed/indian/a0012.wav" type="audio/wav"></source>-->
+<!--                </audio>-->
+<!--            </td>-->
+<!--            <td>-->
+<!--                <audio controls="">-->
+<!--                    <source src="wav_clean/ground_truth/indian/a0012.wav" type="audio/wav"></source>-->
+<!--                </audio>-->
+<!--            </td>-->
+
+
+<!--        </tr>-->
+
+<!--        <tr>-->
+<!--            &lt;!&ndash;        <td rowspan="3">TXHC</td>&ndash;&gt;-->
+
+<!--            <td>-->
+<!--                <audio controls="">-->
+<!--                    <source src="wav_clean/input/indian/arctic_a0581.wav" type="audio/wav"></source>-->
+<!--                </audio>-->
+<!--            </td>-->
+<!--            <td>-->
+<!--                <audio controls="">-->
+<!--                    <source src="wav_clean/baseline/indian/a0581.wav" type="audio/wav"></source>-->
+<!--                </audio>-->
+<!--            </td>-->
+
+<!--           <td>-->
+<!--                <audio controls="">-->
+<!--                    <source src="wav_clean/without_synthetic/indian/a0581.wav" type="audio/wav"></source>-->
+<!--                </audio>-->
+<!--            </td>-->
+
+<!--            <td>-->
+<!--                <audio controls="">-->
+<!--                    <source src="wav_clean/proposed/indian/a0581.wav" type="audio/wav"></source>-->
+<!--                </audio>-->
+<!--            </td>-->
+<!--            <td>-->
+<!--                <audio controls="">-->
+<!--                    <source src="wav_clean/ground_truth/indian/a0581.wav" type="audio/wav"></source>-->
+<!--                </audio>-->
+<!--            </td>-->
+
+
+<!--        </tr>-->
+<!--        <tr>-->
+<!--            &lt;!&ndash;        <td rowspan="3">TXHC</td>&ndash;&gt;-->
+
+<!--            <td>-->
+<!--                <audio controls="">-->
+<!--                    <source src="wav_clean/input/indian/arctic_b0065.wav" type="audio/wav"></source>-->
+<!--                </audio>-->
+<!--            </td>-->
+<!--            <td>-->
+<!--                <audio controls="">-->
+<!--                    <source src="wav_clean/baseline/indian/b0065.wav" type="audio/wav"></source>-->
+<!--                </audio>-->
+<!--            </td>-->
+
+<!--           <td>-->
+<!--                <audio controls="">-->
+<!--                    <source src="wav_clean/without_synthetic/indian/b0065.wav" type="audio/wav"></source>-->
+<!--                </audio>-->
+<!--            </td>-->
+
+<!--            <td>-->
+<!--                <audio controls="">-->
+<!--                    <source src="wav_clean/proposed/indian/b0065.wav" type="audio/wav"></source>-->
+<!--                </audio>-->
+<!--            </td>-->
+<!--            <td>-->
+<!--                <audio controls="">-->
+<!--                    <source src="wav_clean/ground_truth/indian/b0065.wav" type="audio/wav"></source>-->
+<!--                </audio>-->
+<!--            </td>-->
+
+
+<!--        </tr>-->
+<!--        </tbody>-->
+<!--    </table>-->
+
+<!--        <table width="100%" class="samples">-->
+<!--        <tbody>-->
+<!--        <tr>-->
+
+
+<!--            <td rowspan="2"><b>Input with Korean accent</b></td>-->
+
+<!--            <td colspan="8"><b>Accent conversion and  Improving Pronunciation</b></td>-->
+<!--        </tr>-->
+
+<!--        <tr>-->
+<!--            <td>-->
+<!--                <b>Baseline</b>-->
+<!--            </td>-->
+<!--            <td>-->
+<!--                <b>Fine-tuning with knowledge distillation loss </b>-->
+<!--            </td>-->
+<!--            <td>-->
+<!--                <b>Fine-tuning with knowledge distillation loss and Synthetic Ground-Truth</b>-->
+<!--            </td>-->
+<!--             <td>-->
+<!--                <b>Synthetic Ground-Truth</b>-->
+<!--            </td>-->
+
+<!--        </tr>-->
+<!--       <tr>-->
+<!--            &lt;!&ndash;        <td rowspan="3">TXHC</td>&ndash;&gt;-->
+
+<!--            <td>-->
+<!--                <audio controls="">-->
+<!--                    <source src="wav_clean/input/korean/arctic_a0087.wav" type="audio/wav"></source>-->
+<!--                </audio>-->
+<!--            </td>-->
+<!--            <td>-->
+<!--                <audio controls="">-->
+<!--                    <source src="wav/baseline/korean/a0087.wav" type="audio/wav"></source>-->
+<!--                </audio>-->
+<!--            </td>-->
+
+<!--           <td>-->
+<!--                <audio controls="">-->
+<!--                    <source src="wav_clean/without_synthetic/korean/a0087.wav" type="audio/wav"></source>-->
+<!--                </audio>-->
+<!--            </td>-->
+
+<!--            <td>-->
+<!--                <audio controls="">-->
+<!--                    <source src="wav_clean/proposed/korean/a0087.wav" type="audio/wav"></source>-->
+<!--                </audio>-->
+<!--            </td>-->
+<!--            <td>-->
+<!--                <audio controls="">-->
+<!--                    <source src="wav_clean/ground_truth/korean/a0087.wav" type="audio/wav"></source>-->
+<!--                </audio>-->
+<!--            </td>-->
+
+
+<!--        </tr>-->
+
+<!--        <tr>-->
+<!--            &lt;!&ndash;        <td rowspan="3">TXHC</td>&ndash;&gt;-->
+
+<!--            <td>-->
+<!--                <audio controls="">-->
+<!--                    <source src="wav_clean/input/korean/arctic_b0044.wav" type="audio/wav"></source>-->
+<!--                </audio>-->
+<!--            </td>-->
+<!--            <td>-->
+<!--                <audio controls="">-->
+<!--                    <source src="wav/baseline/korean/b0044.wav" type="audio/wav"></source>-->
+<!--                </audio>-->
+<!--            </td>-->
+
+<!--           <td>-->
+<!--                <audio controls="">-->
+<!--                    <source src="wav_clean/without_synthetic/korean/b0044.wav" type="audio/wav"></source>-->
+<!--                </audio>-->
+<!--            </td>-->
+
+<!--            <td>-->
+<!--                <audio controls="">-->
+<!--                    <source src="wav_clean/proposed/korean/b0044.wav" type="audio/wav"></source>-->
+<!--                </audio>-->
+<!--            </td>-->
+<!--            <td>-->
+<!--                <audio controls="">-->
+<!--                    <source src="wav_clean/ground_truth/korean/b0044.wav" type="audio/wav"></source>-->
+<!--                </audio>-->
+<!--            </td>-->
+
+
+<!--        </tr>-->
+
+<!--        <tr>-->
+<!--            &lt;!&ndash;        <td rowspan="3">TXHC</td>&ndash;&gt;-->
+
+<!--            <td>-->
+<!--                <audio controls="">-->
+<!--                    <source src="wav_clean/input/korean/arctic_b0280.wav" type="audio/wav"></source>-->
+<!--                </audio>-->
+<!--            </td>-->
+<!--            <td>-->
+<!--                <audio controls="">-->
+<!--                    <source src="wav/baseline/korean/b0280.wav" type="audio/wav"></source>-->
+<!--                </audio>-->
+<!--            </td>-->
+
+<!--           <td>-->
+<!--                <audio controls="">-->
+<!--                    <source src="wav_clean/without_synthetic/korean/b0280.wav" type="audio/wav"></source>-->
+<!--                </audio>-->
+<!--            </td>-->
+
+<!--            <td>-->
+<!--                <audio controls="">-->
+<!--                    <source src="wav_clean/proposed/korean/b0280.wav" type="audio/wav"></source>-->
+<!--                </audio>-->
+<!--            </td>-->
+<!--            <td>-->
+<!--                <audio controls="">-->
+<!--                    <source src="wav_clean/ground_truth/korean/b0280.wav" type="audio/wav"></source>-->
+<!--                </audio>-->
+<!--            </td>-->
+
+
+<!--        </tr>-->
+<!--        <tr>-->
+<!--            &lt;!&ndash;        <td rowspan="3">TXHC</td>&ndash;&gt;-->
+
+<!--            <td>-->
+<!--                <audio controls="">-->
+<!--                    <source src="wav_clean/input/korean/arctic_b0534.wav" type="audio/wav"></source>-->
+<!--                </audio>-->
+<!--            </td>-->
+<!--            <td>-->
+<!--                <audio controls="">-->
+<!--                    <source src="wav/baseline/korean/b0534.wav" type="audio/wav"></source>-->
+<!--                </audio>-->
+<!--            </td>-->
+
+<!--           <td>-->
+<!--                <audio controls="">-->
+<!--                    <source src="wav_clean/without_synthetic/korean/b0534.wav" type="audio/wav"></source>-->
+<!--                </audio>-->
+<!--            </td>-->
+
+<!--            <td>-->
+<!--                <audio controls="">-->
+<!--                    <source src="wav_clean/proposed/korean/b0534.wav" type="audio/wav"></source>-->
+<!--                </audio>-->
+<!--            </td>-->
+<!--            <td>-->
+<!--                <audio controls="">-->
+<!--                    <source src="wav_clean/ground_truth/korean/b0534.wav" type="audio/wav"></source>-->
+<!--                </audio>-->
+<!--            </td>-->
+
+
+<!--        </tr>-->
+<!--        </tbody>-->
+<!--    </table>-->
+<!--    <table width="100%" class="samples">-->
+<!--        <tbody>-->
+<!--        <tr>-->
+
+
+<!--            <td rowspan="2"><b>Input with Chinese accent</b></td>-->
+
+<!--            <td colspan="8"><b>Accent conversion and  Improving Pronunciation</b></td>-->
+<!--        </tr>-->
+
+<!--        <tr>-->
+<!--            <td>-->
+<!--                <b>Baseline</b>-->
+<!--            </td>-->
+<!--            <td>-->
+<!--                <b>Fine-tuning with knowledge distillation loss</b>-->
+<!--            </td>-->
+<!--            <td>-->
+<!--                <b>Fine-tuning with knowledge distillation loss and Synthetic Ground-Truth</b>-->
+<!--            </td>-->
+<!--             <td>-->
+<!--                <b>Synthetic Ground-Truth</b>-->
+<!--            </td>-->
+
+<!--        </tr>-->
+<!--       <tr>-->
+<!--            &lt;!&ndash;        <td rowspan="3">TXHC</td>&ndash;&gt;-->
+
+<!--            <td>-->
+<!--                <audio controls="">-->
+<!--                    <source src="wav_clean/input/chinese/a0011.wav" type="audio/wav"></source>-->
+<!--                </audio>-->
+<!--            </td>-->
+<!--            <td>-->
+<!--                <audio controls="">-->
+<!--                    <source src="wav/baseline/chinese/a0011.wav" type="audio/wav"></source>-->
+<!--                </audio>-->
+<!--            </td>-->
+
+<!--           <td>-->
+<!--                <audio controls="">-->
+<!--                    <source src="wav_clean/without_synthetic/chinese/a0011.wav" type="audio/wav"></source>-->
+<!--                </audio>-->
+<!--            </td>-->
+
+<!--            <td>-->
+<!--                <audio controls="">-->
+<!--                    <source src="wav_clean/proposed/chinese/a0011.wav" type="audio/wav"></source>-->
+<!--                </audio>-->
+<!--            </td>-->
+<!--            <td>-->
+<!--                <audio controls="">-->
+<!--                    <source src="wav_clean/ground_truth/chinese/a0011.wav" type="audio/wav"></source>-->
+<!--                </audio>-->
+<!--            </td>-->
+
+
+<!--        </tr>-->
+
+<!--        <tr>-->
+<!--            &lt;!&ndash;        <td rowspan="3">TXHC</td>&ndash;&gt;-->
+
+<!--            <td>-->
+<!--                <audio controls="">-->
+<!--                    <source src="wav_clean/input/chinese/a0021.wav" type="audio/wav"></source>-->
+<!--                </audio>-->
+<!--            </td>-->
+<!--            <td>-->
+<!--                <audio controls="">-->
+<!--                    <source src="wav/baseline/chinese/a0021.wav" type="audio/wav"></source>-->
+<!--                </audio>-->
+<!--            </td>-->
+
+<!--           <td>-->
+<!--                <audio controls="">-->
+<!--                    <source src="wav_clean/without_synthetic/chinese/a0021.wav" type="audio/wav"></source>-->
+<!--                </audio>-->
+<!--            </td>-->
+
+<!--            <td>-->
+<!--                <audio controls="">-->
+<!--                    <source src="wav_clean/proposed/chinese/a0021.wav" type="audio/wav"></source>-->
+<!--                </audio>-->
+<!--            </td>-->
+<!--            <td>-->
+<!--                <audio controls="">-->
+<!--                    <source src="wav_clean/ground_truth/chinese/a0021.wav" type="audio/wav"></source>-->
+<!--                </audio>-->
+<!--            </td>-->
+
+
+<!--        </tr>-->
+
+<!--        <tr>-->
+<!--            &lt;!&ndash;        <td rowspan="3">TXHC</td>&ndash;&gt;-->
+
+<!--            <td>-->
+<!--                <audio controls="">-->
+<!--                    <source src="wav_clean/input/chinese/a0027.wav" type="audio/wav"></source>-->
+<!--                </audio>-->
+<!--            </td>-->
+<!--            <td>-->
+<!--                <audio controls="">-->
+<!--                    <source src="wav/baseline/chinese/a0027.wav" type="audio/wav"></source>-->
+<!--                </audio>-->
+<!--            </td>-->
+
+<!--           <td>-->
+<!--                <audio controls="">-->
+<!--                    <source src="wav_clean/without_synthetic/chinese/a0027.wav" type="audio/wav"></source>-->
+<!--                </audio>-->
+<!--            </td>-->
+
+<!--            <td>-->
+<!--                <audio controls="">-->
+<!--                    <source src="wav_clean/proposed/chinese/a0027.wav" type="audio/wav"></source>-->
+<!--                </audio>-->
+<!--            </td>-->
+<!--            <td>-->
+<!--                <audio controls="">-->
+<!--                    <source src="wav_clean/ground_truth/chinese/a0027.wav" type="audio/wav"></source>-->
+<!--                </audio>-->
+<!--            </td>-->
+
+
+<!--        </tr>-->
+<!--        <tr>-->
+<!--            &lt;!&ndash;        <td rowspan="3">TXHC</td>&ndash;&gt;-->
+
+<!--            <td>-->
+<!--                <audio controls="">-->
+<!--                    <source src="wav_clean/input/chinese/a0032.wav" type="audio/wav"></source>-->
+<!--                </audio>-->
+<!--            </td>-->
+<!--            <td>-->
+<!--                <audio controls="">-->
+<!--                    <source src="wav/baseline/chinese/a0032.wav" type="audio/wav"></source>-->
+<!--                </audio>-->
+<!--            </td>-->
+
+<!--           <td>-->
+<!--                <audio controls="">-->
+<!--                    <source src="wav_clean/without_synthetic/chinese/a0032.wav" type="audio/wav"></source>-->
+<!--                </audio>-->
+<!--            </td>-->
+
+<!--            <td>-->
+<!--                <audio controls="">-->
+<!--                    <source src="wav_clean/proposed/chinese/a0032.wav" type="audio/wav"></source>-->
+<!--                </audio>-->
+<!--            </td>-->
+<!--            <td>-->
+<!--                <audio controls="">-->
+<!--                    <source src="wav_clean/ground_truth/chinese/a0032.wav" type="audio/wav"></source>-->
+<!--                </audio>-->
+<!--            </td>-->
+
+
+<!--        </tr>-->
+<!--        </tbody>-->
+<!--          </table>-->
 
 </main>
+</body>
+</html>
+</title>
+</head>
+<body>
+
 </body>
 </html>
