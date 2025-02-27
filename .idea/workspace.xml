@@ -3,14 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="f70e8be3-87cc-4c54-8eb4-c7e1bd492eb7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/video_streaming_output/chinese/Ceo_Zoom_full-cut.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/video_streaming_output/chinese/Ceo_Zoom_full-cut.mp4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/video_streaming_output/chinese/example_1-cut.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/video_streaming_output/chinese/example_1-cut.mp4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/video_streaming_output/chinese/example_4-cut.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/video_streaming_output/chinese/example_4-cut.mp4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/video_streaming_output/indian/example_3-cut.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/video_streaming_output/indian/example_3-cut.mp4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/video_streaming_output/indian/indian_news_1-cut.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/video_streaming_output/indian/indian_news_1-cut.mp4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/video_streaming_output/indian/indian_news_3-cut.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/video_streaming_output/indian/indian_news_3-cut.mp4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/video_streaming_output/vietnamese/example_4-cut.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/video_streaming_output/vietnamese/example_4-cut.mp4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/video_streaming_output/vietnamese/example_6-cut.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/video_streaming_output/vietnamese/example_6-cut.mp4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/streaming_demo.html" beforeDir="false" afterPath="$PROJECT_DIR$/streaming_demo.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +54,7 @@
       <workItem from="1730801481057" duration="599000" />
       <workItem from="1730849061096" duration="599000" />
       <workItem from="1740031840211" duration="1004000" />
-      <workItem from="1740477380564" duration="12739000" />
+      <workItem from="1740477380564" duration="13556000" />
     </task>
     <servers />
   </component>
